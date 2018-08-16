@@ -7,9 +7,9 @@
 
 from news_spider.items import NewsItem, TencentRollNewsItem
 from news_spider.settings import DEFAULT_REQUEST_HEADERS
-from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlLinkExtractor
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy import Request, Spider
 from scrapy.selector import Selector
 import json
